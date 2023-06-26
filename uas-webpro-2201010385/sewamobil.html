@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Mobil</title>
+
+</head>
+<style>
+body {
+    background: url('mobil.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    margin: auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    align-items: center;
+}
+
+.form-box{
+    text-align: center;
+}
+
+.btnback{
+    text-align: center;
+}
+
+
+</style>
+
+<body>
+
+<div class="wrapper">
+    <div class="form-box">
+        <h1>Sewa Mobil</h1>
+
+        Nama Penyewa : <br>
+        <input type="text" name="" placeholder="Masukkan nama"><br>
+        <br>
+        Rentan Waktu : <br>
+        <input type="text" id="jam" placeholder="satuan jam"><br>
+        <br>
+        Jenis Mobil : <br>
+        <select id="jenisMBL">
+            <option>Pilih</option>
+            <option>Avanza</option>
+            <option>Jazz</option>
+            <option>Mercedes</option>
+            <option>Tesla</option>
+            <option>BMW X5</option>
+            <option>Mobil Pick Up</option>
+            <option>Alphard</option>
+        </select> <br>
+        <br>
+        Total Bayar : <label id="Totbayar">.......</label>
+        <button onclick="cek()">Check</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="btnback">
+        <a href="index.html">Kembali</a>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        function cek(){
+            var jam = parseInt(document.getElementById('jam').value);
+            var jenisMBL = document.getElementById('jenisMBL').value;
+            var Totbayar;
+
+            if(jam <= 7){
+                if(jenisMBL == 'Avanza'){
+                    Totbayar = 25000 * jam;
+                }else if(jenisMBL == 'Jazz'){
+                    Totbayar = 50000 * jam;
+                }else if(jenisMBL == 'Mercedes'){
+                    Totbayar = 150000 * jam;
+                } else if(jenisMBL == 'Tesla'){
+                    Totbayar = 200000 * jam;
+                }else if(jenisMBL == 'BMW X5'){
+                    Totbayar = 230000 *  jam;
+                } else if(jenisMBL == 'Mobil Pick Up'){
+                    Totbayar = 20000 * jam;
+                } else if(jenisMBL == 'Alphard'){
+                    Totbayar = 170000 * jam;
+                }
+            }else{
+                if(jenisMBL == 'Avanza'){
+                    Totbayar = 25000 * jam + 50000;
+                }else if(jenisMBL == 'Jazz'){
+                    Totbayar = 50000 * jam + 50000;
+                }else if(jenisMBL == 'Mercedes'){
+                    Totbayar = 150000 * jam + 50000;
+                } else if(jenisMBL == 'Tesla'){
+                    Totbayar = 200000 * jam + 50000;
+                }else if(jenisMBL == 'BMW X5'){
+                    Totbayar = 230000 *  jam + 50000;
+                } else if(jenisMBL == 'Mobil Pick Up'){
+                    Totbayar = 20000 * jam + 50000;
+                } else if(jenisMBL == 'Alphard'){
+                    Totbayar = 170000 * jam + 50000;
+                }
+            } document.getElementById('Totbayar').innerHTML= Totbayar;
+        }
+    </script>
+
+    
+
+</body>
+</html>

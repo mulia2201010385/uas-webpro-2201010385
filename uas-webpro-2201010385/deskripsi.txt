@@ -1,0 +1,9 @@
+Deskripsi Project
+
+      Ide dari project ini adalah program rental atau sewa mobil dan motor. Dengan dua menu tersebut, 
+saya membuat index.html sebagai tampilan awal atau beranda. Dalam index.html juga terdapat kode css untuk mempercantik tampilannya, dimana kedua 
+program yaitu sewa mobil dan sewa motor juga akan muncul. Pertama ketika mengeklik gambar mobil maka akan diarahkan ke program sewa mobil yang 
+gunanya untuk mengecek harga sewa per jam. Selanjutnya program sewa motor, program yang kedua ini hampir sama dengan program sebelumnya, program 
+ini digunakan untuk mengecek harga sewa motor perjamnya. setelahnya ada menu 'Kembali' dibagian bawah masing-masing program, jika ingin kembali ke 
+beranda tinggal klik saja menu kembali. Program sewa mobil dan motor ini menggunakan HTML, yang didalamnya terdapat script javascript dan juga 
+menggunakan CSS untuk mempercantik tampilannya.
